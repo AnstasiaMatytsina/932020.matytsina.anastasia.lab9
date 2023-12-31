@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div>
+        <div id='app'>
+            <table>
+                <thead>
+                    <tr>
+                        <td id='display' colspan='5'>
+                            <div class="display" id='display-wrap'>
+                                <span id='first'></span>
+                                <span id='oper'></span>
+                                <span id='second'></span>
+                            </div>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td type="button" onclick="add('7')">7</td>
+                        <td type="button" onclick="add('8')">8</td>
+                        <td type="button" onclick="add('9')">9</td>
+                        <td type="button" onclick="operation('/')">÷</td>
+                        <td type="button" onclick="clearAll()">C</td>
+                    </tr>
+                    <tr>
+                        <td type="button" onclick="add('4')">4</td>
+                        <td type="button" onclick="add('5')">5</td>
+                        <td type="button" onclick="add('6')">6</td>
+                        <td type="button" onclick="operation('*')">X</td>
+                        <td type="button" onclick="back()">🠈</td>
+                    </tr>
+                    <tr>
+                        <td type="button" onclick="add('1')">1</td>
+                        <td type="button" onclick="add('2')">2</td>
+                        <td type="button" onclick="add('3')">3</td>
+                        <td type="button" onclick="operation('-')">−</td>
+                        <td type="button" onclick="math('=')" rowspan='2'>=</td>
+                    </tr>
+                    <tr>
+                        <td type="button" onclick="add('0')" colspan='2'>0</td>
+                        <td type="button" onclick="add('.')">.</td>
+                        <td type="button" onclick="operation('+')">+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </body>
+</html>
